@@ -1,0 +1,25 @@
+html{
+    color-scheme: dark light;
+}
+
+.tsection-content{ z-index: -1; }
+
+.vector1 {
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    right: 0%;
+    top: 0px;
+    background: linear-gradient(312.73deg, rgba(217, 217, 217, 0.44) 17.61%, rgba(217, 217, 217, 0) 55.85%);
+    clip-path: polygon(70% 0, 0 0, 0 100%, 40% 90%);
+}
+
+.vector2 {
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    clip-path: polygon(70% 0, 100% 0%, 100% 85%, 40% 90%);
+    background: #E1E7EF;
+}

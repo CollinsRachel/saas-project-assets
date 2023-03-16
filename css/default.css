@@ -18,9 +18,17 @@
 
 html{
     color-scheme: dark light;
+    scroll-behavior: smooth;
 }
 
-.tsection-content{ z-index: -1; }
+ul{
+    display: list-item;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a { text-decoration: none; }
 
 .vector1 {
     position: absolute;
@@ -38,6 +46,11 @@ html{
     height: 100%;
     right: 0px;
     top: 0px;
-    clip-path: polygon(70% 0, 100% 0%, 100% 85%, 40% 90%);
+    clip-path: polygon(70% 0, 100% 0%, 100% 80%, 40% 90%);
     background: #E1E7EF;
+    z-index: -1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
 }

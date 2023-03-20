@@ -54,3 +54,13 @@ a { text-decoration: none; }
 body {
     font-family: 'Inter', sans-serif;
 }
+.nav .btn-primary { border-radius: 25px;  }
+
+.btn-primary {
+    background-color: var(--font-color-blue);
+    border: 1px solid var(--grad-1);
+    box-shadow: 0 10px 20px rgba(161, 236, 255, 0.5);
+    transition: ease-in-out 0.3s;
+    color: white;
+    padding: var(--size-16);
+}

@@ -1,4 +1,4 @@
-.top-section { margin: var(--size-40); }
+.top-section {margin: var(--size-20);}
 
 .header {
     display: flex;

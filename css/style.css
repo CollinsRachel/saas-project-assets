@@ -22,3 +22,19 @@
 .nav-list li {
     margin-right: var(--size-10);
 }
+
+.left-part .hero-title { 
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.left-part .hero-text { 
+    color: var(--font-color-light);
+    margin-top: 10px; 
+}
+
+.learn-more {
+    margin-left: 20px;
+    color: var(--font-color-blue);
+    font-weight: 700;
+}

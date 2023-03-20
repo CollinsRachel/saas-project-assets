@@ -30,6 +30,8 @@ ul{
 }
 a { text-decoration: none; }
 
+h1, p { margin: 0; }
+
 .vector1 {
     position: absolute;
     width: 48%;
@@ -54,7 +56,7 @@ a { text-decoration: none; }
 body {
     font-family: 'Inter', sans-serif;
 }
-.nav .btn-primary { border-radius: 25px;  }
+.nav .btn{ border-radius: 25px;  }
 
 .btn-primary {
     background-color: var(--font-color-blue);
@@ -63,4 +65,27 @@ body {
     transition: ease-in-out 0.3s;
     color: white;
     padding: var(--size-16);
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-part .actions {
+    display: flex;
+    align-items: center;
+    margin-top: var(--size-20);
+}
+
+.btn-play {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
 }

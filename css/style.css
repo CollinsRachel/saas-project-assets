@@ -11,20 +11,24 @@
 
 .nav {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
     align-content: center;
     flex-wrap: nowrap;
 }
 
-.nav-list{display: flex;}
+.nav-list{
+    display: flex;
+    margin: 0 var(--size-100);
+}
+
 .nav-list li {
     margin-right: var(--size-10);
 }
 
-.left-part .hero-title { 
-    line-height: 45px;
+a.btn.btn-primary { margin: 0 var(--size-50);}
+
+.left-part .hero-title {
+    line-height: 55px;
     font-weight: 500;
 }
 
@@ -37,4 +41,88 @@
     margin-left: 20px;
     color: var(--font-color-blue);
     font-weight: 700;
+}
+
+.logo1 {
+    left: 85%;
+    top: 5%;
+}
+
+.logo1 img{ 
+    left: 10%;
+    top: 5%;
+}
+
+.logo2 {
+    left: 35%;
+    bottom: 10%;
+}
+
+.logo2 img{
+    left: 15%;
+    top: 5%;
+    height: 70%;
+    width: 70%;
+}
+
+.logo3 {
+    left: 80%;
+    top: 60%;
+    height: 70px;
+    width: 70px;
+}
+
+.logo3 img{
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 10%;
+}
+
+.logo4 {
+    left: 40%;
+    top: 45%;
+    width: 75px;
+    height: 75px;
+}
+
+.logo4 img{
+    left: 10%;
+    top: 5%;
+}
+
+.logo5{
+    left: 5%;
+    bottom: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.logo5 img{
+    width: 75%;
+    height: 75%;
+    left: 10%;
+    top: 10%;
+}
+
+.logo6 {
+    left: 15%;
+    bottom: 15%;
+}
+
+.logo6 img{
+    height: 70%;
+    width: 70%;
+    left: 15%;
+    top: 15%; 
+}
+
+.logo7 {
+    left: 50%;
+    bottom: 25%;
+}
+
+.logo7 img{
+    left: 10%;
+    top: 10%;
 }

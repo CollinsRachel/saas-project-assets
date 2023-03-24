@@ -114,3 +114,17 @@ body {
     height: 80%;
     width: 80%;
 }
+
+.kb-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: var(--size-20);
+    justify-items: center;
+}
+
+.kb-card{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 218.5px;
+}

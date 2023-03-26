@@ -182,3 +182,21 @@ body {
     justify-content: center;
     align-items: center;  
 }
+
+.bannerplay-section{
+    margin: var(--size-100);
+    overflow: hidden;
+}
+
+.video-btn {
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(57, 166, 251, 0.3);
+}
+
+.video-btn img {
+    width: var(--size-100);
+    height: var(--size-100);
+    left: 50%;
+    position: absolute;
+    top: 160rem;
+}

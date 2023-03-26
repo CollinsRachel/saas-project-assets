@@ -129,7 +129,8 @@ body {
     width: 218.5px;
 }
 
-.banner-section{
+.banner-content{ 
+    background: #F8FAFE;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: var(--size-100) var(--size-50);

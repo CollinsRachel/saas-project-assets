@@ -138,7 +138,7 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
 
 .kb-card {
     padding: var(--size-30);
-    box-shadow: 0px 0px 25px 10px rgba(161, 236, 255, 0.5);
+    box-shadow: 0px 0px 25px 10px rgb(150 150 150 / 50%);
     background: white;
     color: black;
     border-radius:  8px;
@@ -181,3 +181,24 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+
+.wf-title-body { color: var(--font-color-light); }
+
+.bullet{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ECF2FF;
+    padding: 10px;
+}
+.bullet-item:first-child .top .left-wing, .bullet-item:last-child .top .right-wing{
+    height: 0;
+}
+.bullet-inner{
+    width: 6px;
+    height: 6px;
+    background: #0066FF;
+    border-radius: 50%;
+}
+
+.tile { font-weight: 500; }

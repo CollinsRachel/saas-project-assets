@@ -161,3 +161,23 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     font-weight: 700;
     margin-top: var(--size-20);
 }
+
+.bs-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bs-left h2{
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.bs-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}

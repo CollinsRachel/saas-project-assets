@@ -202,3 +202,48 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
 }
 
 .tile { font-weight: 500; }
+
+.hb-left {
+    position: relative;
+}
+.woman-three {
+    position:absolute;
+    top: 0px;
+    left: 75px;
+    z-index: 1;
+    width: 371px;
+    height: 425px;
+}
+
+.dots {
+    width: 200px;
+    height: 370px;
+    position: relative;
+    top: 75px;
+    left: 25px;
+}
+
+.hb-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    width: 768px;
+    height: 252px;
+}
+
+.description-body{
+    font-weight: 500;
+    width: 482px;
+    height: 128px;
+    padding-top: var(--size-30);
+    font-size: 22px;
+}
+
+.person h3{ margin-bottom: var(--size-10); }
+.person p { 
+    color: var(--font-color-light); 
+    font-weight: 600;
+}

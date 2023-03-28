@@ -200,3 +200,9 @@ body {
     position: absolute;
     top: 160rem;
 }
+
+.hubspot-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: var(--size-100);
+}

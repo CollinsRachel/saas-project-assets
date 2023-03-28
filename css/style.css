@@ -247,3 +247,26 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     color: var(--font-color-light); 
     font-weight: 600;
 }
+
+.brands-section-title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #5f6368;
+    padding-bottom: var(--size-30);
+    font-size: var(--size-30);
+}
+
+.brands-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.brand-item {
+    width: 113px;
+    height: 40px;
+}

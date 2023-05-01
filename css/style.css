@@ -270,3 +270,86 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     width: 113px;
     height: 40px;
 }
+
+.pricing-title {
+    text-align: center;
+}
+
+.pricing-section {
+    margin: var(--size-50);
+}
+
+.pricing-features-list {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    margin: var(--size-100);
+    column-gap: var(--size-50);
+    justify-items: center;
+}
+
+.pf-img {
+    width: 50px;
+    height: 50px;
+}
+
+.plan {
+    display: flex;
+    flex-direction:column;
+    box-shadow: 0px 0px 25px 11px rgb(150 150 150 / 50%);
+    padding: 30px;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plan-price h2 {
+    font-size: var(--size-50);
+    font-weight: 500;
+}
+
+.plan-price p {
+    font-weight: 500;
+    color: var(--font-color-light);
+}
+
+.plan-body {
+    margin-top: var(--size-40);
+    color: var(--font-color-light);
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.plan-divider {
+    width: 350px;
+    float: left;
+}
+
+.plan-footer {
+    padding-top: var(--size-50);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pf-body {
+    /* margin-top: var(--size-14); */
+    color: var(--font-color-light);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.plans-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:var(--size-20);
+    grid-template-rows: 1fr;
+    row-gap: var(--size-40);
+    width: 60rem;
+}
+
+.plan-feature {
+    padding-bottom: var(--size-100);
+}

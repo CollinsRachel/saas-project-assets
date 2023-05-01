@@ -353,3 +353,10 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
 .plan-feature {
     padding-bottom: var(--size-100);
 }
+
+.hireus-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: var(--bg-color-dark);
+}

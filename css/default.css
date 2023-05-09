@@ -207,3 +207,7 @@ body {
     grid-template-columns: 1fr 1fr;
     margin: var(--size-100);
 }
+
+.form {
+    background-color: white;
+}

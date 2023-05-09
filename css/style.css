@@ -358,5 +358,101 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding: 0px;
     background-color: var(--bg-color-dark);
+    flex: none;
+    order: 9;
+    flex-grow: 0;
+    z-index: 9;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 0px 70px;
+    gap: 60px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.top-leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hireus-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hs-header {
+    color: white;
+    font-size: var(--size-30);
+    margin-bottom: var(--size-10);
+}
+.hs-body {
+    color: var(--font-color-light);
+    font-size: var(--size-20);
+    font-weight: 400;
+    margin-bottom: var(--size-40);
+    margin-top: 0px;
+    line-height: var(--size-30);
+}
+hr { width: 100%;}
+.hireus-phrase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.bottom-leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--size-50);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.person-name {
+    color: #FFFFFF;
+}
+
+.personimages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+}
+
+.pimages {
+    border-radius: 50%;
+    height: var(--size-50);
+    width: var(--size-50);
 }

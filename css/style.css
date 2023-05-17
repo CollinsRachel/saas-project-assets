@@ -456,3 +456,28 @@ hr { width: 100%;}
     height: var(--size-50);
     width: var(--size-50);
 }
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--size-30);
+    gap: var(--size-10);
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 37px;
+    background-color: #FFFFFF;
+    border-radius: var(--size-10);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}

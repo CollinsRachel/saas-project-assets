@@ -365,8 +365,8 @@
                         <input name="lname" type="text" placeholder="Last name">
 
                     </div>
-                    <div class="form-group">
-                        <select name="currentrole" id="budget">
+                    <div class="form-group dropdown-group">
+                        <select name="currentrole" class="budget" id="budget">
                             <option value="select">Budget</option>
                             <option value="student">Student</option>
                             <option value="fulltimejob">Full Time Job</option>
@@ -375,7 +375,7 @@
                             <option value="other">Other</option>
                         </select>
 
-                        <select name="currentrole" id="country">
+                        <select name="currentrole" class="country" id="country">
                             <option value="select">Country</option>
                             <option value="student">Student</option>
                             <option value="fulltimejob">Full Time Job</option>
@@ -391,16 +391,20 @@
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="ckbx">
-                        <label for="ckbx">Yes, I'd like to receive occasional marketing emails <br>
-                            frpm Front. I have the right to opt out at any time.
-                        </label>
-                        <p class="cblabel1">View privacy policy</p>
-                        <p class="cblabel2">View privacy policy</p>
+                        <div class="label">
+                            <label for="ckbx">Yes, I'd like to receive occasional marketing emails <br>
+                                from Front. I have the right to opt out at any time.
+                            </label>
+                            <div class="frame">
+                                <p class="cblabel1">View privacy policy</p>
+                                <p class="cblabel2">View privacy policy</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--button-->
                 <div class="actions">
-                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="#" class="btn-primary">Get Started</a>
                 </div>
             </div>
         </div>

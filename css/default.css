@@ -155,8 +155,7 @@ body {
 .wf-blist {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     margin-top: var(--size-50);
 }
 

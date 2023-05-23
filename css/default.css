@@ -2,6 +2,7 @@
     --font-color-blue: #2576FF;
     --font-color-dark: #000000;
     --font-color-light: #677788;
+    --bg-color-dark: #20335B;
 
     --size-10:0.625rem;
     --size-12:0.75rem;
@@ -113,4 +114,99 @@ body {
     background-color: transparent;
     height: 80%;
     width: 80%;
+}
+
+.kb-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: var(--size-20);
+    justify-items: center;
+}
+
+.kb-card{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 218.5px;
+}
+
+.banner-content{ 
+    background: #F8FAFE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: var(--size-100) var(--size-50);
+}
+
+.why-front-section {
+    margin: var(--size-100) var(--size-50);
+}
+
+.wf-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.wf-title-body {
+    margin: 0 auto;
+    text-align:center;
+}
+
+.wf-blist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: var(--size-50);
+}
+
+.bullet-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-wing, .right-wing {
+    width: var(--size-150);
+    height: 3px;
+    background: #ECF2FF;
+}
+
+.bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.bannerplay-section{
+    margin: var(--size-100);
+    overflow: hidden;
+}
+
+.video-btn {
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(57, 166, 251, 0.3);
+}
+
+.video-btn img {
+    width: var(--size-100);
+    height: var(--size-100);
+    left: 50%;
+    position: absolute;
+    top: 160rem;
+}
+
+.hubspot-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: var(--size-100);
+}
+
+.form {
+    background-color: white;
 }

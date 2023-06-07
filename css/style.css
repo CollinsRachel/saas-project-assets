@@ -7,25 +7,47 @@
     flex-wrap: nowrap;
 }
 
-.logo { width: var(--size-150); }
+.logo, .logo img { 
+    width: 9.6875rem;
+    height: 2.875rem;
+}
 
 .tsection-content .header .nav {
     display: flex;
     flex-direction: row;
-    align-content: center;
     flex-wrap: nowrap;
 }
 
 .nav-list{
     display: flex;
-    margin: 0 var(--size-100);
+    margin: 0 var(--size-50);
 }
 
 .nav-list li {
-    margin-right: var(--size-10);
+    display: block;
 }
 
-a.btn.btn-primary { margin: 0 var(--size-50);}
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--size-30);
+    height: var(--size-20);
+}
+
+a.btn.btn-primary {
+    width: 5rem;
+    height: 1rem;
+    text-align: center;
+}
 
 .left-part .hero-title {
     line-height: 3.4375rem;

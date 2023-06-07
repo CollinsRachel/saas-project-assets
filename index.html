@@ -28,16 +28,22 @@
                 <div class="logo">
                     <img src="./project_logo/logo.svg" alt="font logo">
                 </div>
-                <div class="nav">
-                    <ul class="nav-list">
-                        <li>Home</li>
-                        <li>Features</li>
-                        <li>Learn</li>
-                        <li>Pricing</li>
-                        <li>Hire Us</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
-                </div>
+                <nav class="nav">
+                    <button type="button" class="toggle-button" aria-expanded="false" aria-controls="menu-list">
+                        <span class="open"><i class="fa-solid fa-equals"></i></span>
+                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                    </button>
+                    <div class="navbar-links">
+                        <ul class="nav-list" id="menu-list">
+                            <li>Home</li>
+                            <li>Features</li>
+                            <li>Learn</li>
+                            <li>Pricing</li>
+                            <li>Hire Us</li>
+                        </ul>
+                        <a href="#" class="nav-list btn btn-primary">Buy Now</a>
+                    </div>
+                </nav>
             </div>
             <div class="hero-section">
                 <div class="left-part">
@@ -500,5 +506,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded');
+    
+        function toggleNav({target}) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+    }
+        navButton.addEventListener('click', toggleNav);
+    </script>
 </body>
 </html>

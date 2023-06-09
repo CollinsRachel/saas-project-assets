@@ -142,6 +142,7 @@ body {
 
 .why-front-section {
     margin: var(--size-100) var(--size-50);
+    width:auto;
 }
 
 .wf-title {
@@ -158,7 +159,6 @@ body {
 .wf-blist {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: var(--size-50);
 }
 
@@ -199,7 +199,7 @@ body {
 .video-btn img {
     width: var(--size-100);
     height: var(--size-100);
-    left: 50%;
+    left: 62.5rem;
     position: absolute;
     top: 160rem;
 }

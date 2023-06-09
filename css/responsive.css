@@ -85,4 +85,27 @@
         width: 25rem;
         height: 15rem;
     }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bs-left {
+        align-items: center;
+        padding-bottom: var(--size-50);
+    }
+
+    .right-wing, 
+    .left-wing {
+        width: 75px;
+    }
+
+    .video-btn img {
+        position: relative;
+        left: 23rem;
+        top: 28rem;
+    }
+
+    
 }

@@ -128,4 +128,40 @@
         text-align: center;
     }
 
+    .pricing-features-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-price {
+        justify-content: center;
+    }
+
+    .plan-divider,
+    .plan-body {
+        width: 38rem;
+    }
+
+    .plan-body {
+        text-align:left;
+    }
+
+    footer .plan-footer {
+        align-items: center;
+    }
+
+    .plans-features {
+        width: 45rem;
+        margin-top: 5rem;
+    }
+
+    .plan-feature {
+        width: 12rem;
+        margin: 0;
+    }
+
+    .plan-feature .pf-content {
+        width: 300px;
+    }
+
 }

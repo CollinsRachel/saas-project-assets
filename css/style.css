@@ -323,6 +323,10 @@ a.btn.btn-primary {
     flex-direction:column;
     box-shadow: 0px 0px 1.5625rem var(--size-10) rgb(150 150 150 / 50%);
     padding: var(--size-30);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
 .plan-price {
@@ -346,6 +350,7 @@ a.btn.btn-primary {
     color: var(--font-color-light);
     line-height: 1.5625rem;
     font-weight: 500;
+    width: 20rem;
 }
 
 .plan-divider {
@@ -357,7 +362,7 @@ a.btn.btn-primary {
     padding-top: var(--size-50);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pf-body {
@@ -374,6 +379,7 @@ a.btn.btn-primary {
     grid-template-rows: 1fr;
     row-gap: var(--size-40);
     width: 60rem;
+    justify-items: start;
 }
 
 .plan-feature {

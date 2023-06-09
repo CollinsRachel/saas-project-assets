@@ -264,6 +264,8 @@ a.btn.btn-primary {
     height: 8rem;
     padding-top: var(--size-30);
     font-size: 1.375rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .person h3{ margin-bottom: var(--size-10); }

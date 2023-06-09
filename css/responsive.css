@@ -107,5 +107,25 @@
         top: 28rem;
     }
 
+    .hubspot-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
     
+    .woman-three {left: 15rem;}
+    .dots {left: 13rem;}
+    .hb-right {align-items: center;}
+    .hb-right .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-body {
+        font-weight: 600;
+        width:40rem;
+        text-align: center;
+    }
+
 }

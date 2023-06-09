@@ -76,4 +76,13 @@
     .hero-title { 
         text-align: center;
     }
+
+    .kb-cards {
+        grid-template-columns: repeat(auto-fit, minmax(400px,2fr));  
+    }
+
+    .kb-card {
+        width: 25rem;
+        height: 15rem;
+    }
 }

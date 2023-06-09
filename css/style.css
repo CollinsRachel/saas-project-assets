@@ -49,6 +49,8 @@ a.btn.btn-primary {
     text-align: center;
 }
 
+.hero-title{ width: 15.3125rem;}
+
 .left-part .hero-title {
     line-height: 3.4375rem;
     font-weight: 500;

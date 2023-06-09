@@ -61,4 +61,19 @@
         flex-direction: column;
     }
 
+    .left-part {
+        align-items: center; 
+        width:inherit;
+        align-content: center;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-title { 
+        text-align: center;
+    }
 }

@@ -311,6 +311,7 @@ a.btn.btn-primary {
     margin: var(--size-100);
     column-gap: var(--size-50);
     justify-items: center;
+    width: min-content;
 }
 
 .pf-img {

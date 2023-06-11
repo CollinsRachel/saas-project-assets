@@ -98,7 +98,7 @@
 
     .right-wing, 
     .left-wing {
-        width: 75px;
+        width: 4.6875rem;
     }
 
     .video-btn img {
@@ -131,6 +131,7 @@
     .pricing-features-list {
         display: flex;
         flex-direction: column;
+        align-content: stretch;
     }
 
     .plan-price {
@@ -164,4 +165,34 @@
         width: 300px;
     }
 
+    .hireus-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftside {
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .rightside {
+        align-items: center;
+        margin-right: var(--size-20);
+        margin-left: var(--size-20);
+        align-self: center;
+        padding: auto;
+    }
+
+    .rightside .form {
+        max-width: none;
+    }
+    
+    .frame2 { gap: 0;}
+    .frame15 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: min-content;
+        width: fit-content;
+    }
 }

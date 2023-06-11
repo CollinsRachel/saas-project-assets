@@ -142,7 +142,7 @@ body {
 
 .why-front-section {
     margin: var(--size-100) var(--size-50);
-    width:auto;
+    max-width: min-content;
 }
 
 .wf-title {
@@ -160,6 +160,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: var(--size-50);
+    justify-content: center;
 }
 
 .bullet-item {

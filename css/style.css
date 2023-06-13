@@ -450,6 +450,7 @@ a.btn.btn-primary {
     margin-bottom: var(--size-40);
     margin-top: 0px;
     line-height: var(--size-30);
+    max-width: 30%;
 }
 hr { width: 100%;}
 .hireus-phrase {
@@ -462,6 +463,7 @@ hr { width: 100%;}
     flex-grow: 0;
     color: #FFFFFF;
     font-weight: 500;
+    max-width: 55%;
 }
 
 .bottom-leftside {
@@ -473,7 +475,8 @@ hr { width: 100%;}
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-left: -10rem;
+    min-width: 100%;
+    margin: auto auto auto var(--size-50);
 }
 
 .person-name {

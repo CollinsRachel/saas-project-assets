@@ -131,6 +131,7 @@
     .pricing-features-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
         align-content: stretch;
     }
 
@@ -195,4 +196,125 @@
         height: min-content;
         width: fit-content;
     }
+}
+
+@media (max-width:768px) {
+    .why-front-section { margin: auto;}
+    .wf-blist {
+        flex-direction: column;
+    }
+    .bullet-item {
+        flex-direction: row;
+    }
+    .left-wing, .right-wing { display: none;}
+
+    .bannerplay-section {margin: auto;}
+    .bannerplay-content img#bannerplay2{
+        max-width: -webkit-fill-available;
+    }
+
+    .hubspot-section {
+        display: flex;
+    justify-content: center;
+    margin:var(--size-20) auto var(--size-100) auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    }
+    .dots {
+        left: 0;
+    }
+    .woman-three{
+        left: 0;
+        max-width: -webkit-fill-available;
+    }
+    .description-body{ max-width: 55%;}
+    .brands-list { 
+        flex-direction: column; 
+        gap: var(--size-20);
+    }
+    .pricing-section {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .plan,
+    .plan-header,
+    .plan-footer {
+        padding: 0;
+    margin: 0;
+    max-width: 50%;
+    }
+    .plan-divider {
+        max-width: -webkit-fill-available;
+    }
+    .plan-body { max-width: -webkit-fill-available;}
+    .plans-features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pf-content{
+        max-width: -webkit-fill-available;
+    }
+
+    .leftside{
+        flex-direction: column;
+    }
+
+    .hireus-title {
+        align-items: center;
+    }
+
+    .hs-body {
+        text-align: center;
+        min-width: 100%;
+    }
+    .hireus-phrase {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .bottom-leftside {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rightside {
+        margin: 20;
+        max-width: 85%;
+        padding: 0;
+    }
+
+    .rightside .form {
+        padding: 0;
+    }
+
+    .form-group {
+        flex-direction: column ;
+        width: 100%;
+    }
+
+    .formdata {
+        text-align: center;
+    }
+
+    .form-group input {
+        margin: auto auto auto var(--size-20);
+        min-width: 85%;
+    }
+
+    .form-group.bottom-group { flex-direction: row;} 
+
+    .form-group.dropdown-group { margin-left: var(--size-20); }
+    .budget,
+    .country {
+        min-width: 85%;
+    }
+
+    .cblabel2 {
+        display: none;
+    }
+    .actions { margin-bottom: 10%; }
 }

@@ -131,14 +131,17 @@ body {
     flex-direction: column;
     height: 300px;
     width: 218.5px;
+    max-width:70%;
 }
 
 .banner-content{ 
     background: #F8FAFE;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: var(--size-100) var(--size-50);
+    margin: var(--size-100) var(--size-50);    
 }
+
+.bs-right img { max-width: -webkit-fill-available;}
 
 .why-front-section {
     margin: var(--size-100) var(--size-50);
@@ -166,7 +169,7 @@ body {
 .bullet-item {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
 
 .top {

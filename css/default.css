@@ -96,6 +96,8 @@ body {
     margin-top: var(--size-50);
 }
 
+.right-part {max-width: 55%;}
+
 .btn-play {
     display: flex;
     align-items: center;
@@ -103,10 +105,10 @@ body {
 }
 
 .co-logos{
-    position: relative;
+    position:relative;
     background-color: white;
-    height: 80px;
-    width: 80px;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     box-shadow: 0 0 10px 3px grey;
     margin: 0;
@@ -121,7 +123,7 @@ body {
 
 .kb-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem,1fr));
     gap: var(--size-20);
     justify-items: center;
 }
@@ -129,8 +131,8 @@ body {
 .kb-card{
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 218.5px;
+    height: 18.75rem;
+    width: 13.65625rem;
     max-width:70%;
 }
 
@@ -144,7 +146,7 @@ body {
 .bs-right img { max-width: -webkit-fill-available;}
 
 .why-front-section {
-    margin: var(--size-100) var(--size-50);
+    margin: auto;
     max-width: min-content;
 }
 
@@ -163,7 +165,9 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: var(--size-50);
+    margin-left: 9rem;
     justify-content: center;
+    max-width: 75%;
 }
 
 .bullet-item {

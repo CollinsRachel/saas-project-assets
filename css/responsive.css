@@ -78,13 +78,16 @@
     }
 
     .kb-cards {
-        grid-template-columns: repeat(auto-fit, minmax(400px,2fr));  
+        grid-template-columns: repeat(auto-fit, minmax(25rem,2fr));  
+        max-width: 85%;
     }
 
     .kb-card {
         width: 25rem;
-        height: 15rem;
+        height: 17rem;
     }
+
+    .wf-blist {max-width: 75%;}
 
     .banner-content {
         display: flex;
@@ -115,24 +118,29 @@
     
     .woman-three {left: 15rem;}
     .dots {left: 13rem;}
-    .hb-right {align-items: center;}
+    .hb-right {
+        align-items: center;
+        max-width: inherit;
+    }
     .hb-right .description {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
 
     .description-body {
         font-weight: 600;
         width:40rem;
         text-align: center;
+        margin-bottom: var(--size-50);
     }
 
     .pricing-features-list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-content: stretch;
+        max-width: inherit;
     }
 
     .plan-price {
@@ -142,9 +150,6 @@
     .plan-divider,
     .plan-body {
         width: 38rem;
-    }
-
-    .plan-body {
         text-align:left;
     }
 
@@ -199,6 +204,12 @@
 }
 
 @media (max-width:768px) {
+    ul.nav-list { flex-direction: column; }
+    ul.nav-list li {
+        margin-bottom: var(--size-20);
+        font-weight: 600;
+        font-size: x-large;
+    }
     .why-front-section { margin: auto;}
     .wf-blist {
         flex-direction: column;
@@ -228,7 +239,7 @@
         left: 0;
         max-width: -webkit-fill-available;
     }
-    .description-body{ max-width: 55%;}
+    .description-body{ max-width: 55%; }
     .brands-list { 
         flex-direction: column; 
         gap: var(--size-20);
@@ -245,6 +256,7 @@
     margin: 0;
     max-width: 50%;
     }
+    .plan { max-width: 100%;}
     .plan-divider {
         max-width: -webkit-fill-available;
     }
@@ -253,6 +265,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 50%;
     }
     .pf-content{
         max-width: -webkit-fill-available;
@@ -276,13 +289,11 @@
     }
 
     .bottom-leftside {
-        margin: auto;
         align-items: center;
         text-align: center;
     }
 
     .rightside {
-        margin: 20;
         max-width: 85%;
         padding: 0;
     }
@@ -306,7 +317,11 @@
         min-width: 85%;
     }
 
-    .form-group.bottom-group { flex-direction: row;} 
+    .form-group.bottom-group { 
+        flex-direction: row;
+        max-width: 100%;
+        align-items: center;
+    } 
 
     .form-group.dropdown-group { margin-left: var(--size-20); }
     .budget,
@@ -318,4 +333,49 @@
         display: none;
     }
     .actions { margin-bottom: 10%; }
+    .label {max-width: max-content;}
+    .label label {
+        max-width: 75%;
+        text-align: left;
+    }
+    #ckbx {
+        min-width: min-content;
+        margin: 0;
+    }
+
+    footer{
+        align-items: center;
+    }
+    .frame2 {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .frame14 { align-items: center;}
+
+    .frame14 .nav {align-items: center;}
+
+    .frame15 {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        align-items: center;
+    }
+
+    .frame15 ul.nav { text-align: center;}
+
+    .socialsList {
+        flex-direction: column;
+    }
+
+    .pricing-features-list {
+        margin: 0;
+        width: -webkit-fill-available;
+
+    }
+
+
+    .hb-right {max-width: 100%;}
+    .hb-right .description { max-width:100%;}
 }

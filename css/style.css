@@ -256,13 +256,14 @@ a.btn.btn-primary {
     gap: 3.125rem;
     width: 48rem;
     height: 15.75rem;
+    max-width: 100%;
 }
 
 .description-body{
     font-weight: 500;
     width: 30.125rem;
     height: 8rem;
-    padding-top: var(--size-30);
+    padding:var(--size-30) var(--size-30);
     font-size: 1.375rem;
     display: flex;
     align-items: flex-start;
@@ -273,6 +274,8 @@ a.btn.btn-primary {
     color: var(--font-color-light); 
     font-weight: 600;
 }
+
+.brands-section {margin-top: var(--size-30);}
 
 .brands-section-title {
     font-weight: 700;
@@ -299,6 +302,7 @@ a.btn.btn-primary {
 
 .pricing-title {
     text-align: center;
+    margin-bottom: var(--size-20);
 }
 
 .pricing-section {
@@ -376,11 +380,12 @@ a.btn.btn-primary {
 .plans-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap:var(--size-20);
+    column-gap:var(--size-10);
     grid-template-rows: 1fr;
-    row-gap: var(--size-40);
-    width: 60rem;
+    row-gap: var(--size-10);
     justify-items: start;
+    min-width:auto;
+    max-width:min-content;
 }
 
 .plan-feature {
@@ -476,7 +481,7 @@ hr { width: 100%;}
     order: 1;
     flex-grow: 0;
     min-width: 100%;
-    margin: auto auto auto var(--size-50);
+    margin: auto;
 }
 
 .person-name {
@@ -501,7 +506,7 @@ hr { width: 100%;}
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: var(--size-150) 0px var(--size-150) 4.375rem;
+    padding: var(--size-150) 4.375rem var(--size-150) 4.375rem;
     gap: var(--size-10);
     flex: none;
     order: 1;
@@ -532,6 +537,7 @@ hr { width: 100%;}
     flex: none;
     order: 0;
     flex-grow: 0;
+    max-width: min-content;
 }
 
 .fillout {
@@ -626,9 +632,9 @@ input {
     align-items: flex-start;
     padding: 0px;
     gap: var(--size-10);
-    flex: none;
+    /* flex: none;
     order: 1;
-    flex-grow: 1;
+    flex-grow: 1; */
 }
 
 .label label {
@@ -638,6 +644,7 @@ input {
     align-self: stretch;
     flex-grow: 0;
     line-height: var(--size-20);
+    max-width: 50%;
 }
 
 .frame {
@@ -750,7 +757,6 @@ img.flogo {
 .frame16 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: var(--size-20);
     flex: none;
@@ -885,6 +891,7 @@ hr {
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    text-align: center;
 }
 
 .copyright {

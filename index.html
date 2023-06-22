@@ -28,21 +28,27 @@
                 <div class="logo">
                     <img src="./project_logo/logo.svg" alt="font logo">
                 </div>
-                <div class="nav">
-                    <ul class="nav-list">
-                        <li>Home</li>
-                        <li>Features</li>
-                        <li>Learn</li>
-                        <li>Pricing</li>
-                        <li>Hire Us</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
-                </div>
+                <nav class="nav">
+                    <button type="button" class="toggle-button" aria-expanded="false" aria-controls="menu-list">
+                        <span class="open"><i class="fa-solid fa-equals"></i></span>
+                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                    </button>
+                    <div class="navbar-links">
+                        <ul class="nav-list" id="menu-list">
+                            <li>Home</li>
+                            <li>Features</li>
+                            <li>Learn</li>
+                            <li>Pricing</li>
+                            <li>Hire Us</li>
+                        </ul>
+                        <a href="#" class="nav-list btn btn-primary">Buy Now</a>
+                    </div>
+                </nav>
             </div>
             <div class="hero-section">
                 <div class="left-part">
                     <div class="title">
-                        <h1 class="hero-title">Empowering<br>teams with the<br>freedom</h1>
+                        <h1 class="hero-title">Empowering teams with the freedom</h1>
                         <p class="hero-text">Own the unlimited power of the web development</p>
                     </div>
                     <div class="actions">
@@ -210,9 +216,11 @@
     <div class="bannerplay-section">
         <div class="bannerplay-content">
             <a href="https://www.youtube.com/watch?v=Gtws80ZqTDI" class="video-btn" >
-                <img src="/icons/play.svg" alt="play video button">
+                <div class="bnrplybtn">
+                    <img src="/icons/play.svg" alt="play video button">
+                </div>
             </a>
-            <img src="/banners/banner_two.jpg" alt="second banner image">
+            <img src="/banners/banner_two.jpg" alt="second banner image" id="bannerplay2">
         </div>
     </div>
     <div class="hubspot-section">
@@ -224,10 +232,10 @@
             <div class="description">
                 <div class="logo">
                     <img src="/company_logos/hubspot.svg" alt="hubspot logo">
-                    <p class="description-body">
-                        The template is really nice and offers quite a<br> large set of options. It's beautiful and the<br> coding is done quickly and seamlessly. Thank<br> you!
-                    </p>
                 </div>
+                <p class="description-body">
+                    The template is really nice and offers quite a large set of options. It's beautiful and the coding is done quickly and seamlessly. Thank you!
+                </p>
             </div>
             <div class="person">
                 <h3>Christina Kray</h3>
@@ -269,7 +277,7 @@
                     </div>
                     <hr class="plan-divider">
                     <p class="plan-body">
-                        Start your Front business now. 100%<br>guaranteed money back. No<br> questions asked.<br>
+                        Start your Front business now. 100% guaranteed money back. No  questions asked. 
                     </p>
                 </div>
                 <footer class="plan-footer">
@@ -330,14 +338,14 @@
     </div>
     <div class="hireus-section">
         <div class="leftside">
-            <div class="top-le ftside">
+            <div class="top-leftside">
                 <div class="hireus-title">
                     <h2 class="hs-header">Hire Us</h2>
-                    <h3 class="hs-body"> Whatever your goal - <br>we will get you there</h3>
+                    <h3 class="hs-body"> Whatever your goal - we will get you there</h3>
                     <hr>
                 </div>
                 <h3 class="hireus-phrase"> <i>"I love front! I love the ease of use, I love the 
-                    <br>fact that I have total creative freedom..."</i> </h3>
+                    fact that I have total creative freedom..."</i> </h3>
             </div>
             <div class="bottom-leftside">
                 <div class="person">
@@ -354,7 +362,7 @@
         <div class="rightside">
             <div class="form">
                 <div class="formdata">
-                    <h3 class="fillout">Fill out the form and we'll be in touch as soon as<br> possible</h3>
+                    <h3 class="fillout">Fill out the form and we'll be in touch as soon as possible</h3>
                     <div class="form-group">
                         <!--input type "text"-->
                         <input name="fname" type="text" placeholder="First name">
@@ -390,10 +398,10 @@
                             placeholder="Tell us more about your project, needs, and timeline, please...">
                         </textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group bottom-group">
                         <input type="checkbox" id="ckbx">
                         <div class="label">
-                            <label for="ckbx">Yes, I'd like to receive occasional marketing emails <br>
+                            <label for="ckbx">Yes, I'd like to receive occasional marketing emails
                                 from Front. I have the right to opt out at any time.
                             </label>
                             <div class="frame">
@@ -475,10 +483,10 @@
                     <p class="f4i">Site Map</p>
                 </div>
                 <div class="socialsList">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-google"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-facebook b-socials"></a>
+                    <a href="#" class="fa fa-google b-socials"></a>
+                    <a href="#" class="fa fa-twitter b-socials"></a>
+                    <a href="#" class="fa fa-github b-socials"></a>
 
                     <select name="currentrole" class="country" id="country">
                         <option value="select">Country</option>
@@ -500,5 +508,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded');
+    
+        function toggleNav({target}) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+    }
+        navButton.addEventListener('click', toggleNav);
+    </script>
 </body>
 </html>

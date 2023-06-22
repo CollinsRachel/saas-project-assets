@@ -1,4 +1,8 @@
-.top-section {margin: var(--size-20);}
+.top-section {
+    margin: var(--size-20);
+    max-width: 100vw;
+
+}
 
 .header {
     display: flex;
@@ -7,25 +11,49 @@
     flex-wrap: nowrap;
 }
 
-.logo { width: var(--size-150); }
+.logo, .logo img { 
+    width: 9.6875rem;
+    height: 2.875rem;
+}
 
 .tsection-content .header .nav {
     display: flex;
     flex-direction: row;
-    align-content: center;
     flex-wrap: nowrap;
 }
 
 .nav-list{
     display: flex;
-    margin: 0 var(--size-100);
+    margin: 0 var(--size-50);
 }
 
 .nav-list li {
-    margin-right: var(--size-10);
+    display: block;
 }
 
-a.btn.btn-primary { margin: 0 var(--size-50);}
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--size-30);
+    height: var(--size-20);
+}
+
+a.btn.btn-primary {
+    width: 5rem;
+    height: 1rem;
+    text-align: center;
+}
+
+.hero-title{ width: 15.3125rem;}
 
 .left-part .hero-title {
     line-height: 3.4375rem;
@@ -230,16 +258,19 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     align-items: flex-start;
     padding: 0px;
     gap: 3.125rem;
-    width: 48rem;
+    max-width: 48rem;
     height: 15.75rem;
+    /* max-width: 100%; */
 }
 
 .description-body{
     font-weight: 500;
     width: 30.125rem;
     height: 8rem;
-    padding-top: var(--size-30);
+    padding:var(--size-30) 0;
     font-size: 1.375rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .person h3{ margin-bottom: var(--size-10); }
@@ -247,6 +278,8 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     color: var(--font-color-light); 
     font-weight: 600;
 }
+
+.brands-section {margin-top: var(--size-200);}
 
 .brands-section-title {
     font-weight: 700;
@@ -273,18 +306,19 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
 
 .pricing-title {
     text-align: center;
+    margin-bottom: var(--size-20);
 }
 
-.pricing-section {
+/* .pricing-section {
     margin: var(--size-50);
-}
+} */
 
 .pricing-features-list {
     display: grid;
-    grid-template-columns: .5fr 1fr;
-    margin: var(--size-100);
-    column-gap: var(--size-50);
-    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    /* margin: var(--size-100); */
+    column-gap: var(--size-10);
+    justify-items: end;
 }
 
 .pf-img {
@@ -297,6 +331,10 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     flex-direction:column;
     box-shadow: 0px 0px 1.5625rem var(--size-10) rgb(150 150 150 / 50%);
     padding: var(--size-30);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
 .plan-price {
@@ -320,6 +358,7 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     color: var(--font-color-light);
     line-height: 1.5625rem;
     font-weight: 500;
+    width: 20rem;
 }
 
 .plan-divider {
@@ -331,7 +370,7 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     padding-top: var(--size-50);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pf-body {
@@ -339,21 +378,24 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     color: var(--font-color-light);
     padding-top: 0.3125rem;
     padding-bottom: var(--size-10);
+    text-wrap: balance;
 }
 
 .plans-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap:var(--size-20);
+    column-gap:var(--size-10);
     grid-template-rows: 1fr;
-    row-gap: var(--size-40);
-    width: 60rem;
+    row-gap: var(--size-10);
+    /* width: 25vw; */
 }
 
 .plan-feature {
     padding-bottom: var(--size-100);
     width: 16.4375rem;
     height: 15.0625rem;
+    max-width: fit-content;
+
 }
 
 .hireus-section {
@@ -361,7 +403,7 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     grid-template-columns: 1fr 1fr;
     /*flex-direction: row;
      align-items: flex-start; */
-    padding: 0px;
+    /* padding: 0px; */
     background-color: var(--bg-color-dark);
     /*flex: none;
     order: 9;
@@ -379,7 +421,6 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     order: 0;
     align-self: stretch;
     flex-grow: 1;
-    align-items: center;
 }
 
 .top-leftside {
@@ -417,6 +458,7 @@ a.btn.btn-primary { margin: 0 var(--size-50);}
     margin-bottom: var(--size-40);
     margin-top: 0px;
     line-height: var(--size-30);
+    max-width: 30%;
 }
 hr { width: 100%;}
 .hireus-phrase {
@@ -429,18 +471,20 @@ hr { width: 100%;}
     flex-grow: 0;
     color: #FFFFFF;
     font-weight: 500;
+    max-width: 55%;
 }
 
 .bottom-leftside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    /* padding: 0px; */
     gap: var(--size-50);
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin-left: -10rem;
+    /* min-width: 86%; */
+    /* margin: auto; */
 }
 
 .person-name {
@@ -465,7 +509,7 @@ hr { width: 100%;}
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: var(--size-150) 0px var(--size-150) 4.375rem;
+    padding: var(--size-150) 4.375rem var(--size-150) 4.375rem;
     gap: var(--size-10);
     flex: none;
     order: 1;
@@ -496,6 +540,7 @@ hr { width: 100%;}
     flex: none;
     order: 0;
     flex-grow: 0;
+    max-width: min-content;
 }
 
 .fillout {
@@ -564,17 +609,6 @@ input {
     resize: none;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 1rem;
-    border-radius: 0.3125rem;
-    flex: none;
-    flex-grow: 0;
-}
-
  .form-group input {
     box-sizing: border-box;
     border: 1px solid #E6E8F2;
@@ -590,9 +624,9 @@ input {
     align-items: flex-start;
     padding: 0px;
     gap: var(--size-10);
-    flex: none;
+    /* flex: none;
     order: 1;
-    flex-grow: 1;
+    flex-grow: 1; */
 }
 
 .label label {
@@ -602,6 +636,7 @@ input {
     align-self: stretch;
     flex-grow: 0;
     line-height: var(--size-20);
+    /* max-width: 50%; */
 }
 
 .frame {
@@ -714,7 +749,6 @@ img.flogo {
 .frame16 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: var(--size-20);
     flex: none;
@@ -849,6 +883,7 @@ hr {
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    text-align: center;
 }
 
 .copyright {

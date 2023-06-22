@@ -13,14 +13,13 @@
     --size-30:1.875rem;
     --size-40:2.5rem;
     --size-50:3.125rem;
+    --size-75: 4.6875rem;
     --size-100:6.25rem;
     --size-150:9.375rem;
+    --size-200:12.5rem;
 }
 
-html{
-    color-scheme: dark light;
-    scroll-behavior: smooth;
-}
+html{ scroll-behavior: smooth; }
 
 ul{
     display: list-item;
@@ -96,7 +95,10 @@ body {
     margin-top: var(--size-50);
 }
 
-.right-part {max-width: 55%;}
+.right-part {
+    max-width: 100vw;
+    max-height: min-content;
+}
 
 .btn-play {
     display: flex;
@@ -143,11 +145,16 @@ body {
     margin: var(--size-100) var(--size-50);    
 }
 
+#bannerplay2 {
+    max-width: 85vw;
+}
+
 .bs-right img { max-width: -webkit-fill-available;}
 
 .why-front-section {
-    margin: auto;
+    margin: var(--size-50) auto;
     max-width: min-content;
+
 }
 
 .wf-title {
@@ -165,9 +172,9 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: var(--size-50);
-    margin-left: 9rem;
     justify-content: center;
-    max-width: 75%;
+    width: 75vw;
+    max-width: inherit;
 }
 
 .bullet-item {
@@ -183,7 +190,7 @@ body {
 }
 
 .left-wing, .right-wing {
-    width: var(--size-150);
+    width: var(--size-75);
     height: 3px;
     background: #ECF2FF;
 }
@@ -195,27 +202,48 @@ body {
 }
 
 .bannerplay-section{
-    margin: var(--size-100);
-    overflow: hidden;
+    /* margin: var(--size-20); 
+    max-width: 85vw; */
+    margin-inline: var(--size-20);
+    position: relative;
+    margin-top: var(--size-20);
+}
+
+.bannerplay-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-btn {
     transform: translate(-50%, -50%);
     box-shadow: 0 10px 20px rgba(57, 166, 251, 0.3);
+
+    position: absolute;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .video-btn img {
     width: var(--size-100);
     height: var(--size-100);
-    left: 62.5rem;
+    /* left: 62.5rem;
     position: absolute;
-    top: 160rem;
+    top: 160rem; */
+
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hubspot-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: var(--size-100);
+    margin: var(--size-50);
 }
 
 .form {

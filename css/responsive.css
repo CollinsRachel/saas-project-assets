@@ -1,3 +1,4 @@
+/*tablet mode*/
 @media (max-width: 1023px) {
     [aria-controls="menu-list"] {
         display:block;
@@ -78,16 +79,18 @@
     }
 
     .kb-cards {
-        grid-template-columns: repeat(auto-fit, minmax(25rem,2fr));  
-        max-width: 85%;
+        /* grid-template-columns: repeat(auto-fit, minmax(25rem,2fr));  
+        max-width: 85%; */
+        grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+
     }
 
-    .kb-card {
+    /* .kb-card {
         width: 25rem;
         height: 17rem;
-    }
+    } */
 
-    .wf-blist {max-width: 75%;}
+    /* .wf-blist {max-width: 75%;} */
 
     .banner-content {
         display: flex;
@@ -101,14 +104,18 @@
 
     .right-wing, 
     .left-wing {
-        width: 4.6875rem;
+        width: var(--size-40);
     }
 
-    .video-btn img {
+    .video-btn {
+        transform: translate(25%, -25%);
+    }
+/*currently making the play button go to a crazy place when in mobile mode*/
+    /* .video-btn img {
         position: relative;
         left: 23rem;
         top: 28rem;
-    }
+    } */
 
     .hubspot-section {
         display: flex;
@@ -160,6 +167,7 @@
     .plans-features {
         width: 45rem;
         margin-top: 5rem;
+        justify-items: center;
     }
 
     .plan-feature {
@@ -177,9 +185,18 @@
     }
 
     .leftside {
-        flex-direction: row;
-        padding: 0;
-        justify-content: space-around;
+        /*flex-direction: row;
+         padding: 0;
+        justify-content: space-around; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hs-header { margin-top: auto; }
+
+    .hireus-phrase,
+    .hs-body {
+        max-width: none;
     }
 
     .rightside {
@@ -202,7 +219,7 @@
         width: fit-content;
     }
 }
-
+/*mobile mode*/
 @media (max-width:768px) {
     ul.nav-list { flex-direction: column; }
     ul.nav-list li {
@@ -378,4 +395,9 @@
 
     .hb-right {max-width: 100%;}
     .hb-right .description { max-width:100%;}
+
+    .leftside {display: initial;}
+    .top-leftside { align-items: center;}
+
+    .label label {    max-width: none;}
 }

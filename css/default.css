@@ -153,8 +153,6 @@ body {
 
 .why-front-section {
     margin: var(--size-50) auto;
-    max-width: min-content;
-
 }
 
 .wf-title {
